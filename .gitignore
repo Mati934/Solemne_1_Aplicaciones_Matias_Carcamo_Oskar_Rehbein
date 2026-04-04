@@ -7,6 +7,7 @@
 __pycache__/
 #*.py[cod]
 #*$py.class
+*.egg-info/
 
 # Caché de Herramientas
 .pytest_cache/

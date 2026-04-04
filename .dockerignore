@@ -25,6 +25,7 @@ env/
 # Cache de herramientas
 .pytest_cache/
 .ruff_cache/
+*.egg-info/
 
 # Documentacion
 README.md
