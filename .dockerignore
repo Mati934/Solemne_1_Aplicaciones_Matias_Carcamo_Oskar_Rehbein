@@ -29,4 +29,10 @@ env/
 
 # Documentacion
 README.md
+EXPLICACION.md
 
+# hora/tests
+test_*.py
+
+# Para ejecuón de tests
+conftest.py
