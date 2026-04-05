@@ -36,3 +36,4 @@ test_*.py
 
 # Para ejecuón de tests
 conftest.py
+EXPLICACION.md
