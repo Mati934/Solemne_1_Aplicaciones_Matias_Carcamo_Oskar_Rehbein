@@ -1,7 +1,7 @@
 # macOS and Windows
 .DS_Store
-#Thumbs.db
-#desktop.ini
+Thumbs.db
+desktop.ini
 
 # Python
 __pycache__/
