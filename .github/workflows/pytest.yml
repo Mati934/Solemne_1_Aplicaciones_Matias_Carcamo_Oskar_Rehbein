@@ -1,7 +1,7 @@
 name: pytest
 on:
     push:
-        branches: [ main , ci-cd ]
+        branches: [ main , ci-cd , master ]
 
 jobs:
     test:

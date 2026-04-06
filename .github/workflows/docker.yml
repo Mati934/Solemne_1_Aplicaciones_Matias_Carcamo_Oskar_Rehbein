@@ -3,7 +3,7 @@ on:
     workflow_run:
         workflows: [ 'pytest' ]
         types: [ completed ]
-        branches: [ main , ci-cd ]
+        branches: [ main , ci-cd , master ]
 
 jobs:
     docker:
