@@ -8,7 +8,7 @@ app = FastAPI()
 
 @app.get("/time")
 def read_time():
-    """Retorna la hora actual en GMT como JSON.
+    """Retorna la hora actual en UTC-4 como JSON.
 
     Returns:
         dict: {"datetime": "YYYY-MM-DD HH:MM:SS"}

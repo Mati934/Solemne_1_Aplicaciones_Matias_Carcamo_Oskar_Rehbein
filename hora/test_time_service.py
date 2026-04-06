@@ -1,11 +1,11 @@
-from datetime import datetime, timezone
+from datetime import datetime
 from unittest.mock import patch
 
-from hora.time_service import get_current_time
+from hora.time_service import TZ, get_current_time
 
 
 def test_obtiene_datetime_en_utc():
-    """Verifica que get_current_time retorna datetime en UTC."""
+    """Verifica que get_current_time retorna datetime en la zona horaria configurada."""
     mock_response = type("MockResponse", (), {"tx_time": 1712222400})()
 
     with patch("ntplib.NTPClient") as mock_client_class:
@@ -15,5 +15,5 @@ def test_obtiene_datetime_en_utc():
         result = get_current_time()
 
         assert isinstance(result, datetime)
-        assert result.tzinfo == timezone.utc
+        assert result.tzinfo == TZ
         mock_client.request.assert_called_once_with("ntp.shoa.cl")
