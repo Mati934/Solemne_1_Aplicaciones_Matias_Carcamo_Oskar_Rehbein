@@ -21,8 +21,8 @@ docker run -p 8000:8000 solemne-01
 ## Ejecucion imagen DockerHub
 
 ```bash
-docker pull oskarrehbein/hora-actual-MC-OR:master
-docker run -p 8000:8000 oskarrehbein/hora-actual-MC-OR:master
+docker pull oskarrehbein/hora-actual-mc-or:master
+docker run -p 8000:8000 oskarrehbein/hora-actual-mc-or:master
 ```
 
 ## Probar el endpoint

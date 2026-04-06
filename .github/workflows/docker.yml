@@ -18,7 +18,7 @@ jobs:
                 id: meta
                 uses: docker/metadata-action@v6
                 with:
-                    images: ${{ vars.DOCKER_USERNAME }}/hora-actual-MC-OR
+                    images: ${{ vars.DOCKER_USERNAME }}/hora-actual-mc-or
 
             -   name: Login a dockerhub
                 uses: docker/login-action@v4
